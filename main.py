@@ -82,14 +82,14 @@ class Main:
         window.withdraw()
         center_window(window, 600, 460)
         window.title("Certificate Applications")
-        logo = PhotoImage(file=r"images/logo-application.png")
-        window.iconphoto(False, logo)
+        window.iconbitmap("images/icon-app.ico")
 
         # ? config panel
         panel_info_bg = Label(window, background="white")
         panel_info_bg.place(width=600, height=84)
         line_panel_info = Label(window, background="#b5b5b5")
         line_panel_info.place(width=600, height=1, y=85)
+        logo = PhotoImage(file=r"images/logo-application.png")
         logo_application = Label(window, image=logo, background="white")
         logo_application.place(x=11, y=9)
         inf_application = Label(
