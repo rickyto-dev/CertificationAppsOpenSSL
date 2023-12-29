@@ -1,0 +1,1 @@
+openssl req -nodes -x509 -newkey rsa:4096 -keyout KeyOpenSSL.key -out CerOpenSSL.cer -days 1825 -subj "/CN=Applications"
